@@ -1,5 +1,5 @@
 {
-  description = "Application packaged using poetry2nix";
+  description = "An alternative way to import *.csv files to Notion.so.";
 
   inputs.flake-utils.url = "github:numtide/flake-utils";
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/release-23.05";
