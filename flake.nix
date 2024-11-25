@@ -47,14 +47,14 @@
               }) pkgs) build-packages)));
       in {
         packages = {
-          myapp = mkPoetryApplication {
+          csv2notion = mkPoetryApplication {
             projectDir = self;
 
             overrides = defaultPoetryOverrides.extend
               (self: super: build-overlays self super);
           };
 
-          default = self.packages.${system}.myapp;
+          default = self.packages.${system}.csv2notion;
         };
 
         devShells.default =
